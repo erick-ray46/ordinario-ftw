@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paises [
+<!ELEMENT paises (pais+)>
+<!ELEMENT pais (nombrePais, nombrePlatillo, descripcion, precio, tipoComida)>
+<!ELEMENT nombrePais (#PCDATA)>
+<!ELEMENT nombrePlatillo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT tipoComida (#PCDATA)>
+
+]>
+
+<paises>
+
+    <pais>
+        <nombrePais>México</nombrePais>
+        <nombrePlatillo>Tacos al Pastor</nombrePlatillo>
+        <descripcion>Tortillas de maíz con carne al pastor, cebolla, cilantro y piña.</descripcion>
+        <precio>85</precio>
+        <tipoComida>Comida Rápida</tipoComida>
+    </pais>
+
+    <pais>
+        <nombrePais>Italia</nombrePais>
+        <nombrePlatillo>Pizza Margarita</nombrePlatillo>
+        <descripcion>Masa artesanal con salsa de tomate, queso mozzarella y albahaca.</descripcion>
+        <precio>180</precio>
+        <tipoComida>Comida Tradicional</tipoComida>
+    </pais>
+
+    <pais>
+        <nombrePais>Japón</nombrePais>
+        <nombrePlatillo>Sushi Maki</nombrePlatillo>
+        <descripcion>Arroz, alga nori, salmón y vegetales frescos.</descripcion>
+        <precio>220</precio>
+        <tipoComida>Mariscos</tipoComida>
+    </pais>
+
+    <pais>
+        <nombrePais>España</nombrePais>
+        <nombrePlatillo>Paella Valenciana</nombrePlatillo>
+        <descripcion>Arroz con pollo, mariscos, verduras y especias.</descripcion>
+        <precio>250</precio>
+        <tipoComida>Comida Tradicional</tipoComida>
+    </pais>
+
+    <pais>
+        <nombrePais>Estados Unidos</nombrePais>
+        <nombrePlatillo>Hamburguesa Clásica</nombrePlatillo>
+        <descripcion>Carne de res, queso cheddar, lechuga, tomate y papas fritas.</descripcion>
+        <precio>150</precio>
+        <tipoComida>Comida Rápida</tipoComida>
+    </pais>
+
+    <pais>
+        <nombrePais>India</nombrePais>
+        <nombrePlatillo>Pollo Tikka Masala</nombrePlatillo>
+        <descripcion>Pollo marinado en especias con salsa cremosa de tomate.</descripcion>
+        <precio>210</precio>
+        <tipoComida>Comida Picante</tipoComida>
+    </pais>
+
+</paises>

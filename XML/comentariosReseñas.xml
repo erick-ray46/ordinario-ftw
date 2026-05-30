@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Definición DTD Interna para Comentarios y Reseñas -->
+<!DOCTYPE resenas [
+    <!ELEMENT resenas (resena+)>
+    <!ELEMENT resena (autor, fecha, calificacion, comentario, sucursalVisitada)>
+    <!ATTLIST resena id ID #REQUIRED>
+    
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT calificacion (#PCDATA)>
+    <!ELEMENT comentario (#PCDATA)>
+    <!ELEMENT sucursalVisitada (#PCDATA)>
+]>
+
+<resenas>
+    <resena id="R001">
+        <autor>María González</autor>
+        <fecha>2026-05-25</fecha>
+        <calificacion>5</calificacion>
+        <comentario>¡Me encantó! La pizza Margherita es auténtica italiana. El servicio fue muy rápido y amable.</comentario>
+        <sucursalVisitada>Sucursal Centro</sucursalVisitada>
+    </resena>
+
+    <resena id="R002">
+        <autor>Carlos Ruiz</autor>
+        <fecha>2026-05-26</fecha>
+        <calificacion>4</calificacion>
+        <comentario>Los platillos mexicanos están muy bien sazonados. El único detalle es que había mucha gente y tardaron un poco en darnos mesa.</comentario>
+        <sucursalVisitada>Sucursal Norte</sucursalVisitada>
+    </resena>
+
+    <resena id="R003">
+        <autor>Ana Patricia López</autor>
+        <fecha>2026-05-28</fecha>
+        <calificacion>5</calificacion>
+        <comentario>El chef se lució con la especialidad del día. Sin duda volveremos el próximo fin de semana para celebrar un cumpleaños.</comentario>
+        <sucursalVisitada>Sucursal Sur</sucursalVisitada>
+    </resena>
+</resenas>

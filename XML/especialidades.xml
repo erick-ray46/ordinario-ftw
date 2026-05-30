@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE especialidades [
+    <!ELEMENT especialidades (platilloEspecial+)>
+    <!ELEMENT platilloEspecial (nombre, descripcion, precio, diaDisponible)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT diaDisponible (#PCDATA)>
+]>
+
+<especialidades>
+    <platilloEspecial>
+        <nombre>Corte Rib-Eye a la Leña</nombre>
+        <descripcion>Corte premium de 400g cocinado con leña de mezquite, acompañado de vegetales a la parrilla.</descripcion>
+        <precio>320.00</precio>
+        <diaDisponible>Sábado y Domingo</diaDisponible>
+    </platilloEspecial>
+    <platilloEspecial>
+        <nombre>Pasta Frutti di Mare</nombre>
+        <descripcion>Pasta artesanal con una selección fresca de mariscos (camarón, calamar y mejillones) en salsa blanca.</descripcion>
+        <precio>210.00</precio>
+        <diaDisponible>Jueves</diaDisponible>
+    </platilloEspecial>
+    <platilloEspecial>
+        <nombre>Menú Ejecutivo - Plato del Día</nombre>
+        <descripcion>Crema del día, plato principal a elegir y bebida natural incluida.</descripcion>
+        <precio>135.00</precio>
+        <diaDisponible>Lunes a Viernes</diaDisponible>
+    </platilloEspecial>
+</especialidades>

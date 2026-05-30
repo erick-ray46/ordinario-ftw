@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE redSucursales [
+    <!ELEMENT redSucursales (sucursal+)>
+    <!ELEMENT sucursal (nombreSucursal, direccion, telefono, chef)>
+    <!ATTLIST sucursal id ID #REQUIRED>
+    
+    <!ELEMENT nombreSucursal (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT chef (nombreChef, especialidad, experiencia)>
+    <!ELEMENT nombreChef (#PCDATA)>
+    <!ELEMENT especialidad (#PCDATA)>
+    <!ELEMENT experiencia (#PCDATA)>
+]>
+
+<redSucursales>
+    <sucursal id="SUC01">
+        <nombreSucursal>Sucursal Centro Histórico</nombreSucursal>
+        <direccion>Av. Principal 123, Colonia Centro</direccion>
+        <telefono>555-0123</telefono>
+        <chef>
+            <nombreChef>Chef Roberto Gómez</nombreChef>
+            <especialidad>Comida Tradicional Mexicana</especialidad>
+            <experiencia>15 años de experiencia en alta cocina.</experiencia>
+        </chef>
+    </sucursal>
+
+    <sucursal id="SUC02">
+        <nombreSucursal>Sucursal Plaza Norte</nombreSucursal>
+        <direccion>Blvd. Norte 456, Interior Plaza</direccion>
+        <telefono>555-0456</telefono>
+        <chef>
+            <nombreChef>Chef Luigi Rossi</nombreChef>
+            <especialidad>Gastronomía Italiana</especialidad>
+            <experiencia>Originario de Nápoles, experto en pastas artesanales.</experiencia>
+        </chef>
+    </sucursal>
+
+    <sucursal id="SUC03">
+        <nombreSucursal>Sucursal Mirador Sur</nombreSucursal>
+        <direccion>Calle del Cerro 789, Vista Hermosa</direccion>
+        <telefono>555-0789</telefono>
+        <chef>
+            <nombreChef>Chef Kenji Sato</nombreChef>
+            <especialidad>Fusión Asiática</especialidad>
+            <experiencia>Maestro en cortes de pescado y preparación de ramen tradicional.</experiencia>
+        </chef>
+    </sucursal>
+</redSucursales>

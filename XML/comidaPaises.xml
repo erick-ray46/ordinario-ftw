@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paises [
+    <!ELEMENT paises (pais+)>
+    <!ELEMENT pais (nombrePais, nombrePlatillo, descripcion, precio, tipoComida, imgComida)>
+    <!ELEMENT nombrePais (#PCDATA)>
+    <!ELEMENT nombrePlatillo (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT tipoComida (#PCDATA)>
+    <!ELEMENT imgComida (#PCDATA)>
+]>
+
+<paises>
+
+    <pais>
+        <nombrePais>México</nombrePais>
+        <nombrePlatillo>Tacos al Pastor</nombrePlatillo>
+        <descripcion>Tortillas de maíz con carne al pastor, cebolla, cilantro y piña.</descripcion>
+        <precio>85</precio>
+        <tipoComida>Comida Rápida</tipoComida>
+        <imgComida>../IMG/tacosPastor.jpg</imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>Italia</nombrePais>
+        <nombrePlatillo>Pizza Margarita</nombrePlatillo>
+        <descripcion>Masa artesanal con salsa de tomate, queso mozzarella y albahaca.</descripcion>
+        <precio>180</precio>
+        <tipoComida>Comida Tradicional</tipoComida>
+        <imgComida>../IMG/pizzaMargarita.jpg</imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>Japón</nombrePais>
+        <nombrePlatillo>Sushi Maki</nombrePlatillo>
+        <descripcion>Arroz, alga nori, salmón y vegetales frescos.</descripcion>
+        <precio>220</precio>
+        <tipoComida>Mariscos</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>España</nombrePais>
+        <nombrePlatillo>Paella Valenciana</nombrePlatillo>
+        <descripcion>Arroz con pollo, mariscos, verduras y especias.</descripcion>
+        <precio>250</precio>
+        <tipoComida>Comida Tradicional</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>Estados Unidos</nombrePais>
+        <nombrePlatillo>Hamburguesa Clásica</nombrePlatillo>
+        <descripcion>Carne de res, queso cheddar, lechuga, tomate y papas fritas.</descripcion>
+        <precio>150</precio>
+        <tipoComida>Comida Rápida</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>India</nombrePais>
+        <nombrePlatillo>Pollo Tikka Masala</nombrePlatillo>
+        <descripcion>Pollo marinado en especias con salsa cremosa de tomate.</descripcion>
+        <precio>210</precio>
+        <tipoComida>Comida Picante</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+    <pais>
+        <nombrePais>México</nombrePais>
+        <nombrePlatillo>Pozole Rojo</nombrePlatillo>
+        <descripcion>Caldo de maíz cacahuazintle con carne de cerdo, lechuga, rábano y orégano.</descripcion>
+        <precio>120</precio>
+        <tipoComida>Comida Tradicional</tipoComida>
+        <imgComida>../IMG/pozole.jpg</imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>México</nombrePais>
+        <nombrePlatillo>Enchiladas Verdes</nombrePlatillo>
+        <descripcion>Tortillas rellenas de pollo bañadas en salsa verde y crema.</descripcion>
+        <precio>95</precio>
+        <tipoComida>Comida Tradicional</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>Italia</nombrePais>
+        <nombrePlatillo>Lasaña Boloñesa</nombrePlatillo>
+        <descripcion>Capas de pasta con carne molida, salsa de tomate y queso gratinado.</descripcion>
+        <precio>210</precio>
+        <tipoComida>Pasta</tipoComida>
+        <imgComida></imgComida>        
+    </pais>
+
+    <pais>
+        <nombrePais>Italia</nombrePais>
+        <nombrePlatillo>Risotto de Champiñones</nombrePlatillo>
+        <descripcion>Arroz cremoso cocinado con champiñones y queso parmesano.</descripcion>
+        <precio>190</precio>
+        <tipoComida>Vegetariana</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>Japón</nombrePais>
+        <nombrePlatillo>Ramen Tonkotsu</nombrePlatillo>
+        <descripcion>Fideos en caldo de cerdo con huevo, cebollín y alga nori.</descripcion>
+        <precio>230</precio>
+        <tipoComida>Sopa</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>Japón</nombrePais>
+        <nombrePlatillo>Tempura Mixta</nombrePlatillo>
+        <descripcion>Vegetales y camarones rebozados y fritos.</descripcion>
+        <precio>200</precio>
+        <tipoComida>Mariscos</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>España</nombrePais>
+        <nombrePlatillo>Tortilla Española</nombrePlatillo>
+        <descripcion>Huevos, papa y cebolla cocinados a fuego lento.</descripcion>
+        <precio>140</precio>
+        <tipoComida>Comida Tradicional</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>España</nombrePais>
+        <nombrePlatillo>Gazpacho Andaluz</nombrePlatillo>
+        <descripcion>Sopa fría de tomate, pepino, ajo y aceite de oliva.</descripcion>
+        <precio>110</precio>
+        <tipoComida>Sopa</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>Estados Unidos</nombrePais>
+        <nombrePlatillo>Hot Dog Clásico</nombrePlatillo>
+        <descripcion>Salchicha de res con mostaza, cátsup y cebolla.</descripcion>
+        <precio>95</precio>
+        <tipoComida>Comida Rápida</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>Estados Unidos</nombrePais>
+        <nombrePlatillo>Costillas BBQ</nombrePlatillo>
+        <descripcion>Costillas de cerdo bañadas en salsa barbacoa.</descripcion>
+        <precio>280</precio>
+        <tipoComida>Carnes</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>India</nombrePais>
+        <nombrePlatillo>Biryani de Pollo</nombrePlatillo>
+        <descripcion>Arroz especiado con pollo marinado y hierbas aromáticas.</descripcion>
+        <precio>240</precio>
+        <tipoComida>Comida Picante</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>India</nombrePais>
+        <nombrePlatillo>Samosas</nombrePlatillo>
+        <descripcion>Empanadillas rellenas de papa y especias.</descripcion>
+        <precio>90</precio>
+        <tipoComida>Botana</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>Francia</nombrePais>
+        <nombrePlatillo>Coq au Vin</nombrePlatillo>
+        <descripcion>Pollo cocinado lentamente en vino tinto con vegetales.</descripcion>
+        <precio>290</precio>
+        <tipoComida>Comida Gourmet</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>Francia</nombrePais>
+        <nombrePlatillo>Crepas Dulces</nombrePlatillo>
+        <descripcion>Crepas rellenas de chocolate, frutas o mermelada.</descripcion>
+        <precio>130</precio>
+        <tipoComida>Postres</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>Alemania</nombrePais>
+        <nombrePlatillo>Bratwurst</nombrePlatillo>
+        <descripcion>Salchicha alemana acompañada de mostaza y pan.</descripcion>
+        <precio>150</precio>
+        <tipoComida>Comida Tradicional</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>China</nombrePais>
+        <nombrePlatillo>Arroz Frito Especial</nombrePlatillo>
+        <descripcion>Arroz salteado con vegetales, huevo y pollo.</descripcion>
+        <precio>170</precio>
+        <tipoComida>Comida Asiática</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+    <pais>
+        <nombrePais>China</nombrePais>
+        <nombrePlatillo>Pollo Agridulce</nombrePlatillo>
+        <descripcion>Trozos de pollo fritos bañados en salsa agridulce.</descripcion>
+        <precio>190</precio>
+        <tipoComida>Comida Asiática</tipoComida>
+        <imgComida></imgComida>
+    </pais>
+
+</paises>
