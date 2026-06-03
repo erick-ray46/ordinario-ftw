@@ -2,42 +2,36 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Restaurante - Chefs y Sucursales</title>
+    <title>Chefs por Sucursal</title>
     <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
 <body>
 
-    <input type="checkbox" id="btn-menu">
+<nav>
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="tipoComida.html">Tipos de Comida</a></li>
+        <li><a href="comidaPaises.html">Comida Internacional</a></li>
+        <li><a href="especialidades.html">Especialidad del Día</a></li>
+        <li><a href="sucursales.html">Sucursales</a></li>
+        <li><a href="comentariosReseñas.html">Reseñas</a></li>
+        <li><a href="chefSucursales.html" class="activo"> Chefs</a></li>
+    </ul>
+</nav>
 
-    <header class="header">
-        <label for="btn-menu" class="icon-menu">☰ Menú</label>
-        <h1>Nuestro Restaurante</h1>
-    </header>
+<h1>Chefs en Turno</h1>
 
-    <nav class="sidebar">
-        <label for="btn-menu" class="btn-close">×</label>
-        <h2>Secciones</h2>
-        <ul>
-            <li><a href="paginaInicio.html">Inicio</a></li>
-            <li><a href="comidaPaises.html">Comida por Países</a></li>
-            <li><a href="chefSucursales.html">Chefs y Sucursales</a></li>
-            <li><a href="especialidades.html">Especialidades</a></li>
-            <li><a href="tipoComida.html">Tipos de Comida</a></li>
-            <li><a href="sucursales.html">Nuestras Sucursales</a></li>
-            <li><a href="comentariosReseñas.html">Comentarios y Reseñas</a></li>
-        </ul>
-    </nav>
+<div id="contenido"></div>
 
-    <main class="content">
-        <h2>Conoce a nuestro equipo y ubicaciones</h2>
-        <p>El talento detrás de nuestros platillos en cada una de nuestras sucursales:</p>
-        
-        <div id="contenedor-chefs">
-            <p>Cargando información de chefs y sucursales...</p>
-        </div>
-    </main>
+<script src="../JS/main.js"></script>
 
-    <script src="../JS/main.js"></script>
+<script>
+cargarXML(
+    "../XML/chefSucursales.xml",
+    "chef",
+    ["nombre","especialidad","sucursal"]
+);
+</script>
 
 </body>
 </html>

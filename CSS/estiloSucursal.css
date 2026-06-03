@@ -1,0 +1,40 @@
+
+.titulo-sucursales{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 40px;
+}
+
+/* Contenedor de tarjetas */
+#contenedor-sucursales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Tarjetas */
+.tarjeta-sucursal{
+    width: 320px;
+    min-height: 220px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.tarjeta-sucursal h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #d4a700;
+}
+
+.tarjeta-sucursal p{
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.4;
+}

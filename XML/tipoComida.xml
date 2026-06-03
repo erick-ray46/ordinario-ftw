@@ -1,63 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE paises [
-<!ELEMENT paises (pais+)>
-<!ELEMENT pais (nombrePais, nombrePlatillo, descripcion, precio, tipoComida)>
-<!ELEMENT nombrePais (#PCDATA)>
-<!ELEMENT nombrePlatillo (#PCDATA)>
-<!ELEMENT descripcion (#PCDATA)>
-<!ELEMENT precio (#PCDATA)>
-<!ELEMENT tipoComida (#PCDATA)>
+<!DOCTYPE tiposComida SYSTEM "./DTD/tipoComida.dtd">
 
-]>
+<tiposComida>
 
-<paises>
+    <tipo>
+        <nombre>Entradas</nombre>
+        <descripcion>Botanas y aperitivos para comenzar la experiencia gastronómica.</descripcion>
+        <platillo>Guacamole con Totopos|85</platillo>
+        <platillo>Sopa de Fideos|65</platillo>
+        <platillo>Nachos Supremos|120</platillo>
+        <platillo>Dedos de Queso|95</platillo>
+        <platillo>Bruschettas Italianas|110</platillo>
+        <platillo>Aros de Cebolla|80</platillo>
+        <imagen>../IMG/entradas.jpg</imagen>
+    </tipo>
 
-    <pais>
-        <nombrePais>México</nombrePais>
-        <nombrePlatillo>Tacos al Pastor</nombrePlatillo>
-        <descripcion>Tortillas de maíz con carne al pastor, cebolla, cilantro y piña.</descripcion>
-        <precio>85</precio>
-        <tipoComida>Comida Rápida</tipoComida>
-    </pais>
+    <tipo>
+        <nombre>Desayunos</nombre>
+        <descripcion>Opciones ideales para iniciar el día con energía.</descripcion>
+        <platillo>Sandwich de Avocado|100</platillo>
+        <platillo> Waffles con Frutas|90</platillo>
+        <platillo>Huevos rancheros|110</platillo>
+        <imagen>../IMG/desayunos.jpg</imagen>
+    </tipo>
 
-    <pais>
-        <nombrePais>Italia</nombrePais>
-        <nombrePlatillo>Pizza Margarita</nombrePlatillo>
-        <descripcion>Masa artesanal con salsa de tomate, queso mozzarella y albahaca.</descripcion>
-        <precio>180</precio>
-        <tipoComida>Comida Tradicional</tipoComida>
-    </pais>
+    <tipo>
+        <nombre>Comida Ligera</nombre>
+        <descripcion>Platillos saludables bajos en calorías y altos en nutrientes.</descripcion>
+        <platillo>Ensalada César con Pollo|85</platillo>
+        <platillo>Wrap de Vegetales y Hummus|75</platillo>
+        <imagen>../IMG/fit.png</imagen>
+    </tipo>
 
-    <pais>
-        <nombrePais>Japón</nombrePais>
-        <nombrePlatillo>Sushi Maki</nombrePlatillo>
-        <descripcion>Arroz, alga nori, salmón y vegetales frescos.</descripcion>
-        <precio>220</precio>
-        <tipoComida>Mariscos</tipoComida>
-    </pais>
+    <tipo>
+        <nombre>Platos Fuertes</nombre>
+        <descripcion>Carnes, pescados, pastas y especialidades principales del restaurante.</descripcion>
+        <platillo>Filete de Res a la Parrilla|150</platillo>
+        <platillo>Salmon al Horno con Hierbas|140</platillo>
+        <platillo>Pechuga de Pollo en Salsa de Champiñones|130</platillo>
+        <platillo>Arrachera con Papas|120</platillo>
+        <platillo>Camarones al Ajillo|160</platillo>
+        <platillo>Chuleta de Cerdo Ahumada|180</platillo>
+        <platillo>Tacos de Arrachera|100</platillo>
+        <imagen>../IMG/platosFuertes.png</imagen>
+    </tipo>
 
-    <pais>
-        <nombrePais>España</nombrePais>
-        <nombrePlatillo>Paella Valenciana</nombrePlatillo>
-        <descripcion>Arroz con pollo, mariscos, verduras y especias.</descripcion>
-        <precio>250</precio>
-        <tipoComida>Comida Tradicional</tipoComida>
-    </pais>
+    <tipo>
+        <nombre>Postres</nombre>
+        <descripcion>Pasteles, crepas, helados y dulces para finalizar la comida.</descripcion>
+        <platillo>Pastel de chocolate|90</platillo>
+        <platillo>Helado de fresa|75</platillo>
+        <platillo>Cheesecake tortuga|85</platillo>
+        <imagen>../IMG/postres.png</imagen>
+    </tipo>
 
-    <pais>
-        <nombrePais>Estados Unidos</nombrePais>
-        <nombrePlatillo>Hamburguesa Clásica</nombrePlatillo>
-        <descripcion>Carne de res, queso cheddar, lechuga, tomate y papas fritas.</descripcion>
-        <precio>150</precio>
-        <tipoComida>Comida Rápida</tipoComida>
-    </pais>
+    <tipo>
+        <nombre>Bebidas</nombre>
+        <descripcion>Bebidas frías, calientes, jugos naturales y cafés.</descripcion>
+        <platillo>Café Americano|50</platillo>
+        <platillo>Jugo de Naranja Natural|60</platillo>
+        <platillo>Refresco de Limonada|40</platillo>
+        <imagen>../IMG/bebidas.jpg</imagen>
+    </tipo>
 
-    <pais>
-        <nombrePais>India</nombrePais>
-        <nombrePlatillo>Pollo Tikka Masala</nombrePlatillo>
-        <descripcion>Pollo marinado en especias con salsa cremosa de tomate.</descripcion>
-        <precio>210</precio>
-        <tipoComida>Comida Picante</tipoComida>
-    </pais>
-
-</paises>
+</tiposComida>

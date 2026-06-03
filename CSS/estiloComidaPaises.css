@@ -1,0 +1,66 @@
+#contenido{
+    width: 95%;
+    margin: auto;
+}
+
+.pais{
+    margin-bottom: 40px;
+}
+
+.pais h2{
+    background: #333;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.contenedor-platillos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.tarjeta{
+    width: 220px;
+    height: 220px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.tarjeta:hover{
+    transform: scale(1.05);
+}
+
+.imagen-platillo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infoPlatillo{
+    display: none;
+    padding: 10px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.infoPlatillo h3{
+    margin-top: 0;
+}
+
+.precio{
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}

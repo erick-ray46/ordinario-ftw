@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Especialidad del Día</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/estiloEspecialidad.css"
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+       <li><a href="tipoComida.html">Tipos de Comida</a></li> 
+        <li><a href="comidaPaises.html">Comida Internacional</a></li>
+        <li><a href="especialidades.html" class="activo">Especialidad del Día</a></li>
+        <li><a href="sucursales.html">Sucursales</a></li>
+        <li><a href="comentariosReseñas.html">Reseñas</a></li>
+        <li><a href="chefSucursales.html">Chefs</a></li>
+    </ul>
+</nav>
+
+<h1>Especialidad del Día</h1>
+
+<div id="contenido"></div>
+
+<script src="../JS/main.js"></script>
+
+<script>
+cargarXML(
+    "../XML/especialidades.xml",
+    "especialidad",
+    ["nombre","descripcion","precio"]
+);
+</script>
+
+</body>
+</html>

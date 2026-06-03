@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Tipos de Comida</title>
     <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/estiloTipoComida.css">
 </head>
+
 <body>
 
-<nav>
-    <ul>
-        <li><a href="paginaInicio.html">Inicio</a></li>
-        <li><a href="comidaPaises.html" class="activo">Comida por Países</a></li>
-        <li><a href="especialidades.html">Especialidad del Día</a></li>
-        <li><a href="sucursales.html">Sucursales</a></li>
-        <li><a href="tipoComida.html">Tipos de Comida</a></li>
-        <li><a href="comentariosReseñas.html">Reseñas</a></li>
-        <li><a href="chefSucursales.html">Chefs</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="tipoComida.html" class="activo">Tipos de Comida</a></li>
+            <li><a href="comidaPaises.html">Comida Internacional</a></li>
+            <li><a href="especialidades.html">Especialidad del Día</a></li>
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <li><a href="comentariosReseñas.html">Reseñas</a></li>
+            <li><a href="chefSucursales.html">Chefs</a></li>
+        </ul>
+    </nav>
 
-<h1>Tipos de Comida</h1>
+    <h1 class="titulo-seccion">Tipos de Comida</h1>
 
-<div id="contenido"></div>
+    <div id="contenido"></div>
+    <div id="modal" class="modal">
 
-<script src="../JS/main.js"></script>
+        <div class="modal-contenido">
 
-<script>
-cargarXML(
-    "../XML/tipoComida.xml",
-    "tipo",
-    ["nombre","descripcion"]
-);
-</script>
+            <span class="cerrar" onclick="cerrarModal()">
+                &times;
+            </span>
+
+            <h2 id="tituloModal"></h2>
+            <p id="descripcionModal"></p>
+
+            <ul id="listaPlatillos"></ul>
+
+        </div>
+
+    </div>
+
+    <script src="../JS/main.js"></script>
+
+    <script>
+        cargarTiposComida();
+    </script>
 
 </body>
+
 </html>

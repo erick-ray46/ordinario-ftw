@@ -1,0 +1,8 @@
+<!ELEMENT paises (pais+)>
+<!ELEMENT pais (nombrePais, nombrePlatillo, descripcion, precio, tipoComida, imgComida)>
+<!ELEMENT nombrePais (#PCDATA)>
+<!ELEMENT nombrePlatillo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT tipoComida (#PCDATA)>
+<!ELEMENT imgComida (#PCDATA)>

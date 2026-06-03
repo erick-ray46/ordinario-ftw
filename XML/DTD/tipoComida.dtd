@@ -1,0 +1,6 @@
+    <!ELEMENT tiposComida (tipo+)>
+    <!ELEMENT tipo (nombre, descripcion, platillo+, imagen)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT platillo (#PCDATA)>
+    <!ELEMENT imagen (#PCDATA)>

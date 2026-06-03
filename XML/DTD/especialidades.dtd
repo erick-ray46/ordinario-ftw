@@ -1,0 +1,10 @@
+<!ELEMENT especialidades (ComidaDia+)>
+
+<!ELEMENT comidaDia (nombreDia, entrada, platoFuerte, bebida, postre, precio)>
+
+<!ELEMENT nombreDia (#PCDATA)>
+<!ELEMENT entrada (#PCDATA)>
+<!ELEMENT platoFuerte (#PCDATA)>
+<!ELEMENT bebida (#PCDATA)>
+<!ELEMENT postre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>

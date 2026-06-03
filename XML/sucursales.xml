@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sucursales SYSTEM "./DTD/sucursales.dtd">
+<sucursales>
+    <sucursal>
+        <nombre>Xalapa</nombre>
+        <direccion>Av. Enríquez #150</direccion>
+        <telefono>2281234567</telefono>
+        <horario>08:00 - 22:00</horario>
+    </sucursal>
+
+    <sucursal>
+        <nombre>Veracruz Puerto</nombre>
+        <direccion>Blvd. Costero #500</direccion>
+        <telefono>2295551234</telefono>
+        <horario>08:00 - 23:00</horario>
+    </sucursal>
+
+    <sucursal>
+        <nombre>Veracruz Centro</nombre>
+        <direccion>Av. Lázaro Cárdenas #100</direccion>
+        <telefono>2291112345</telefono>
+        <horario>08:00 - 23:00</horario>
+    </sucursal>
+    <sucursal>
+        <nombre>Coatepec Centro</nombre>
+        <direccion>Calle 5 de Mayo #777</direccion>
+        <telefono>2291112345</telefono>
+        <horario>08:00 - 23:00</horario>
+    </sucursal>
+
+</sucursales>

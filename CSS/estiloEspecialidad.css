@@ -1,0 +1,51 @@
+#contenido{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.tarjeta-dia{
+
+    width:320px;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+    transition:0.3s;
+}
+
+.tarjeta-dia:hover{
+    transform:translateY(-5px);
+}
+
+.tarjeta-dia h2{
+
+    text-align:center;
+
+    color:#d4a700;
+
+    margin-bottom:15px;
+
+    border-bottom:2px solid #d4a700;
+
+    padding-bottom:10px;
+}
+
+.precio-menu{
+
+    text-align:center;
+
+    margin-top:15px;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:green;
+}

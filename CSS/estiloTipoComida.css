@@ -1,0 +1,105 @@
+.titulo-seccion{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.tarjeta-tipo{
+    width: 250px;
+    height: 250px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.imagen-tipo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-tipo{
+    display: none;
+    padding: 15px;
+}
+
+.info-tipo h3{
+    text-align: center;
+}
+
+.modal{
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.6);
+}
+
+.modal-contenido{
+
+    background: white;
+
+    width: 500px;
+
+    margin: 100px auto;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+#descripcionModal{
+    margin: 15px 0;
+    color: #555;
+    font-style: italic;
+}
+#listaPlatillos{
+    list-style: none;
+    padding: 0;
+}
+
+#listaPlatillos li{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.precio{
+
+    color: green;
+
+    font-weight: bold;
+
+    font-size: 18px;
+}
+
+.cerrar{
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}

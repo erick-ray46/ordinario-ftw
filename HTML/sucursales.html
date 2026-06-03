@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sucursales</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/estiloSucursal.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="tipoComida.html">Tipos de Comida</a></li>
+            <li><a href="comidaPaises.html">Comida Internacional</a></li>
+            <li><a href="especialidades.html">Especialidad del Día</a></li>
+            <li><a href="sucursales.html" class="activo">Sucursales</a></li>
+            <li><a href="comentariosReseñas.html">Reseñas</a></li>
+            <li><a href="chefSucursales.html">Chefs</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="titulo-seccion">Nuestras Sucursales</h1>
+
+    <div id="contenedor-sucursales"></div>
+
+    <div id="modal" class="modal">
+
+        <div class="modal-contenido">
+
+            <span class="cerrar" onclick="cerrarModal()">
+                &times;
+            </span>
+
+            <h2 id="tituloModal"></h2>
+
+            <p id="direccionModal"></p>
+
+            <p id="telefonoModal"></p>
+
+            <p id="horarioModal"></p>
+
+        </div>
+
+    </div>
+
+    <script src="../JS/main.js"></script>
+
+    <script>
+        cargarSucursales();
+    </script>
+
+</body>
+</html>
