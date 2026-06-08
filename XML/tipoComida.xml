@@ -10,18 +10,30 @@
         <platillo>Sopa de Fideos|65</platillo>
         <platillo>Nachos Supremos|120</platillo>
         <platillo>Dedos de Queso|95</platillo>
-        <platillo>Bruschettas Italianas|110</platillo>
-        <platillo>Aros de Cebolla|80</platillo>
+        <platillo>Sopa de Fideos|65</platillo>
+        <platillo>Pan de Ajo|50</platillo>
+        <platillo>Papas Gajo|45</platillo>
+        <platillo>Coctel de Camarón |65</platillo>
+        <platillo>Tostadas de Atún|45</platillo>
+        <platillo>Queso Fundido|35</platillo>
         <imagen>../IMG/entradas.jpg</imagen>
     </tipo>
 
     <tipo>
         <nombre>Desayunos</nombre>
         <descripcion>Opciones ideales para iniciar el día con energía.</descripcion>
-        <platillo>Sandwich de Avocado|100</platillo>
-        <platillo> Waffles con Frutas|90</platillo>
-        <platillo>Huevos rancheros|110</platillo>
+        <platillo>Sandwich de Avocado|35</platillo>
+        <platillo> Waffles con Frutas|45</platillo>
+        <platillo>Huevos rancheros|50</platillo>
+        <platillo>Huevos con Jamón|55</platillo>
+        <platillo>Omelette de Queso|90</platillo>
+        <platillo>Bagel con Queso Crema|80</platillo>
+        <platillo>Croissant de Jamón y Queso|90</platillo>   
+        <platillo>Burrito de Huevo|35</platillo>
+        <platillo>Enfrijoladas|60</platillo>
+        <platillo>Enmoladas|60</platillo>     
         <imagen>../IMG/desayunos.jpg</imagen>
+
     </tipo>
 
     <tipo>
@@ -29,6 +41,9 @@
         <descripcion>Platillos saludables bajos en calorías y altos en nutrientes.</descripcion>
         <platillo>Ensalada César con Pollo|85</platillo>
         <platillo>Wrap de Vegetales y Hummus|75</platillo>
+        <platillo>Bagel con Salmón |90</platillo>
+        <platillo>Ensalada de Quinoa|80</platillo>
+        <platillo>Rollitos Primavera|75</platillo>
         <imagen>../IMG/fit.png</imagen>
     </tipo>
 
@@ -39,27 +54,45 @@
         <platillo>Salmon al Horno con Hierbas|140</platillo>
         <platillo>Pechuga de Pollo en Salsa de Champiñones|130</platillo>
         <platillo>Arrachera con Papas|120</platillo>
-        <platillo>Camarones al Ajillo|160</platillo>
         <platillo>Chuleta de Cerdo Ahumada|180</platillo>
         <platillo>Tacos de Arrachera|100</platillo>
+        <platillo>Fajitas Mixtas|110</platillo>
+        <platillo>Espagueti Boloñesa |105</platillo>
+        <platillo>Milanesa de Res|130</platillo>
+        <platillo>Milanesa de Pollo|120</platillo>
         <imagen>../IMG/platosFuertes.png</imagen>
     </tipo>
 
     <tipo>
         <nombre>Postres</nombre>
         <descripcion>Pasteles, crepas, helados y dulces para finalizar la comida.</descripcion>
-        <platillo>Pastel de chocolate|90</platillo>
+        <platillo>Pastel de Chocolate o Fresa|90</platillo>
         <platillo>Helado de fresa|75</platillo>
         <platillo>Cheesecake tortuga|85</platillo>
+        <platillo>Brownie con Helado|80</platillo>
+        <platillo>Helado de Vainilla o Chocolate|70</platillo>
+        <platillo>Copa de Frutas|60</platillo>
+        <platillo>Gelatina de Frutas|50</platillo>
+        <platillo>Mousse de Chocolate|90</platillo>
+        <platillo>Pay de Limón|85</platillo>
+        <platillo>Galletas Artesanales|60</platillo>
         <imagen>../IMG/postres.png</imagen>
     </tipo>
 
     <tipo>
         <nombre>Bebidas</nombre>
         <descripcion>Bebidas frías, calientes, jugos naturales y cafés.</descripcion>
+        <platillo>Agua Natural |35</platillo>
+        <platillo>Agua Mineral |38</platillo>
+        <platillo>Limonada |40</platillo>
+        <platillo>Naranjada |45</platillo>
+        <platillo>Té Helado |45</platillo>
+        <platillo>Refresco |43</platillo>
         <platillo>Café Americano|50</platillo>
-        <platillo>Jugo de Naranja Natural|60</platillo>
-        <platillo>Refresco de Limonada|40</platillo>
+        <platillo>Jarra de jugo de Naranja Natural|90</platillo>
+        <platillo>Jarra de Limonada|90</platillo>
+
+        <platillo>Malteada de Vainilla o Chocolate |65</platillo>
         <imagen>../IMG/bebidas.jpg</imagen>
     </tipo>
 

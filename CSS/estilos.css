@@ -22,8 +22,8 @@ nav li{
 }
 
 nav a{
-    font-size: 22px;      /* Tamaño */
-    font-weight: bold;    /* Negrita */
+    font-size: 22px;  
+    font-weight: bold;    
     text-decoration: none;
     color: white;
     transition: 0.3s;
@@ -34,4 +34,99 @@ nav a.activo{
     color: #333;
     padding: 10px 15px;
     border-radius: 8px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+#perfilUsuario{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: bold;
+}
+#perfilUsuario{
+    background: rgba(255,255,255,0.15);
+    padding: 8px 15px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+#btnCerrarSesion{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+#usuarioNav{
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul.menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    nav li {
+        padding: 8px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    #perfilUsuario {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #tabla, #tablaChefs, #tablaReservas {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #tabla th, #tabla td,
+    #tablaChefs th, #tablaChefs td,
+    #tablaReservas th, #tablaReservas td {
+        padding: 8px 5px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul.menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
 }

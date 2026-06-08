@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chefs SYSTEM "./DTD/chefSucursales.dtd">
+<chefs>
+    <chef>
+        <nombreCompleto>Gordon Ramsay</nombreCompleto>
+        <nombrePais>Michoacán, México</nombrePais>
+    </chef>
+    <chef>
+        <nombreCompleto>Massimo Bottura</nombreCompleto>
+        <nombrePais>Sinaloa, México</nombrePais>
+    </chef>
+    <chef>
+        <nombreCompleto>René Redzepi</nombreCompleto>
+        <nombrePais> Copenhagen, Dinamarca</nombrePais>
+    </chef>
+    <chef>
+        <nombreCompleto>Pedro Sola</nombreCompleto>
+        <nombrePais>Guatemala</nombrePais>
+    </chef>
+    <chef>
+        <nombreCompleto>Roberto Gómez Bolaños</nombreCompleto>
+        <nombrePais>Paris, Francia</nombrePais>
+    </chef>
+    <chef>
+        <nombreCompleto>Carlos Mendoza Fuentes</nombreCompleto>
+        <nombrePais>Ciudad de México, México</nombrePais>
+    </chef>
+
+    <chef>
+        <nombreCompleto>Alejandro Ruiz Morales</nombreCompleto>
+        <nombrePais>Oaxaca, México</nombrePais>
+    </chef>
+
+    <chef>
+        <nombreCompleto>María Fernanda Torres Vega</nombreCompleto>
+        <nombrePais>Guadalajara, México</nombrePais>
+    </chef>
+
+    <chef>
+        <nombreCompleto>Jorge Hernández Castillo</nombreCompleto>
+        <nombrePais>Puebla, México</nombrePais>
+    </chef>
+
+    <chef>
+        <nombreCompleto>Lupita Ramírez Sánchez</nombreCompleto>
+        <nombrePais>Veracruz, México</nombrePais>
+    </chef>
+
+    <chef>
+        <nombreCompleto>Diego Flores Gutiérrez</nombreCompleto>
+        <nombrePais>Mérida, México</nombrePais>
+    </chef>
+</chefs>

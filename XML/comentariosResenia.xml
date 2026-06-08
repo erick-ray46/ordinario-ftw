@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resenias SYSTEM "./DTD/resenias.dtd">
+
+<resenias>
+
+    <resenia>
+        <nombre>Juan Estrada Carrillo</nombre>
+        <comentario>El lugar es muy bonito y la atención es excelente.</comentario>
+        <calificacion>5</calificacion>
+    </resenia>
+    <resenia>
+        <nombre>Pedro Pérez</nombre>
+        <comentario>El servicio fue bueno pero el precio es un poco elevado.</comentario>
+        <calificacion>4</calificacion>
+    </resenia>
+    <resenia>
+        <nombre>Samuel García</nombre>
+        <comentario>Cuando falleció mi perro fue un momento dificl y pensé que era la cosa más dura
+            que me podia pasar hasta que conocí su filete de res</comentario>
+        <calificacion>2</calificacion>
+    </resenia>
+    <resenia>
+        <nombre>María López</nombre>
+       
+        <comentario>La comida estuvo deliciosa y el servicio fue excelente. Sin duda volveré.</comentario> 
+        <calificacion>5</calificacion>
+    </resenia>
+
+    <resenia>
+        <nombre>Carlos Hernández</nombre>
+        <comentario>Muy buena atención y ambiente agradable. Los platillos llegaron rápido.</comentario>
+        <calificacion>4</calificacion>
+    </resenia>
+
+    <resenia>
+        <nombre>Ana Martínez</nombre>
+        <comentario>Las porciones son generosas y el sabor es increíble. Recomiendo los postres.</comentario>
+        <calificacion>5</calificacion>
+    </resenia>
+
+    <resenia>
+        <nombre>José Ramírez</nombre>
+        <comentario>La comida estuvo bien, aunque el tiempo de espera fue un poco largo.</comentario>
+        <calificacion>3</calificacion>
+    </resenia>
+
+    <resenia>
+        <nombre>Fernanda Ruiz</nombre>
+        <comentario>Excelente experiencia. El restaurante es muy limpio y el personal muy amable.</comentario>
+        <calificacion>5</calificacion>
+    </resenia>
+
+    <resenia>
+        <nombre>Ricardo Torres</nombre>
+        <comentario>Gran variedad de platillos y bebidas. Los precios son razonables.</comentario>
+        <calificacion>4</calificacion>
+    </resenia>
+
+    <resenia>
+        <nombre>Paola Mendoza</nombre>
+        <comentario>La especialidad del día fue espectacular. Definitivamente regresaré.</comentario>
+        <calificacion>5</calificacion>
+    </resenia>
+
+    <resenia>
+        <nombre>Luis Gómez</nombre>
+        <comentario>La comida estaba buena, pero el servicio fue un poco lento.</comentario>
+        <calificacion>2</calificacion>
+    </resenia>
+
+    <resenia>
+        <nombre>Sofía Castillo</nombre>
+        <comentario>El lugar tiene una decoración muy agradable y los chefs hacen un gran trabajo.</comentario>
+        <calificacion>4</calificacion>
+
+    </resenia>
+
+    <resenia>
+        <nombre>Daniel Vargas</nombre>
+        <comentario>Uno de los mejores restaurantes que he visitado. Todo estuvo perfecto.</comentario>
+        <calificacion>5</calificacion>
+
+    </resenia>
+
+</resenias>

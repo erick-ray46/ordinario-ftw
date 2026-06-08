@@ -10,27 +10,55 @@
 
 <body class="inicio">
 
-    <nav>
-        <ul>
-            <li><a href="index.html" class="activo">Inicio</a></li>
-            <li><a href="HTML/tipoComida.html">Carta</a></li>
-            <li><a href="HTML/comidaPaises.html">Comida Internacional</a></li>
-            <li><a href="HTML/especialidades.html">Especialidad del Día</a></li>
-            <li><a href="HTML/sucursales.html">Sucursales</a></li>
-            <li><a href="HTML/comentariosReseñas.html">Reseñas</a></li>
-            <li><a href="HTML/chefSucursales.html">Chefs</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="HTML/tipoComida.html">Carta</a></li>
+                <li><a href="HTML/comidaPaises.html">Comida Internacional</a></li>
+                <li><a href="HTML/especialidades.html">Especialidad del Día</a></li>
+                <li><a href="HTML/sucursales.html">Sucursales</a></li>
+                <li><a href="HTML/comentariosReseñas.html">Reseñas</a></li>
+                <li><a href="HTML/chefSucursales.html">Chefs</a></li>
+            </ul>
+            <div id="perfilUsuario">
+                <span id="usuarioNav"></span>
+                <button id="btnCerrarSesion" onclick="cerrarSesion()">Salir</button>
+            </div>
+        </nav>
+    </header>
 
-    <div class="tarjeta-principal">
+    <main>
+        <div class="tarjeta-principal">
+            <h1>Restaurante - Pueblito Mágico</h1>
+            <p>Disfruta platillos de todo el mundo con un toque mexicano.</p>
+            <p id="mensajeBienvenida"></p>
 
-        <h1>Restaurante - Pueblito Mágico</h1>
 
-        <p>
-            Disfruta platillos de todo el mundo con un toque de mexicano. 
-        </p>
-
+            <div class="login-container" id="loginContainer">
+                <h2 id="tituloLogin">Iniciar Sesión</h2>
+                <input type="text" id="usuario" placeholder="Usuario">
+                <input type="password" id="password" placeholder="Contraseña">
+                <div class="botones-login">
+                    <button id="btnRegistrar" onclick="registrarUsuario()">Registrarse</button>
+                    <button id="btnIngresar" onclick="iniciarSesion()">Ingresar</button>
+                </div>
+                <p id="usuarioActual"></p>
+            </div>
+        </div>
+    </main>
+    <div id="modalAlerta" class="modal-alerta">
+        <div class="modal-alerta-contenido">
+            <p id="mensajeAlerta"></p>
+            <button onclick="cerrarAlertaInicio()">Aceptar</button>
+        </div>
     </div>
+
+    <script src="JS/main.js"></script>
+
+    <script>
+        mostrarUsuarioActivo();
+    </script>
 
 </body>
 

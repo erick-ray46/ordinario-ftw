@@ -8,7 +8,7 @@
         <platoFuerte>Arrachera con Papas</platoFuerte>
         <bebida>Agua de Jamaica</bebida>
         <postre>Flan Napolitano</postre>
-        <precio>320</precio>
+        <precio>450</precio>
     </comidaDia>
 
     <comidaDia>
@@ -17,7 +17,7 @@
         <platoFuerte>Pechuga en Salsa de Champiñones</platoFuerte>
         <bebida>Limonada Natural</bebida>
         <postre>Pastel de Chocolate</postre>
-        <precio>250</precio>
+        <precio>370</precio>
     </comidaDia>
 
     <comidaDia>
@@ -26,7 +26,7 @@
         <platoFuerte>Lasaña Italiana</platoFuerte>
         <bebida>Té Helado</bebida>
         <postre>Cheesecake</postre>
-        <precio>280</precio>
+        <precio>410</precio>
     </comidaDia>
 
     <comidaDia>
@@ -35,7 +35,7 @@
         <platoFuerte>Salmón al Horno</platoFuerte>
         <bebida>Agua Mineral</bebida>
         <postre>Helado de Vainilla</postre>
-        <precio>198</precio>
+        <precio>320</precio>
     </comidaDia>
 
     <comidaDia>
@@ -44,7 +44,7 @@
         <platoFuerte>Costillas BBQ</platoFuerte>
         <bebida>Refresco</bebida>
         <postre>Brownie</postre>
-        <precio>185</precio>
+        <precio>275</precio>
     </comidaDia>
 
     <comidaDia>
@@ -53,7 +53,7 @@
         <platoFuerte>Rib Eye</platoFuerte>
         <bebida>Limonada Mineral</bebida>
         <postre>Pastel Tres Leches</postre>
-        <precio>310</precio>
+        <precio>410</precio>
     </comidaDia>
 
     <comidaDia>
@@ -62,7 +62,7 @@
         <platoFuerte>Paella Valenciana</platoFuerte>
         <bebida>Sangría sin alcohol</bebida>
         <postre>Crepas de Cajeta</postre>
-        <precio>250</precio>
+        <precio>370</precio>
     </comidaDia>
 
 </especialidades>

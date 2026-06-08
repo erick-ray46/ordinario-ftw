@@ -8,27 +8,36 @@
     <link rel="stylesheet" href="../CSS/estiloComidaPaises.css">
 </head>
 
-<body>
+<body onload="cargarComidaPaises()">
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="tipoComida.html">Carta</a></li>
-            <li><a href="comidaPaises.html" class="activo">Comida Internacional</a></li>
-            <li><a href="especialidades.html">Especialidad del Día</a></li>
-            <li><a href="sucursales.html">Sucursales</a></li>
-            <li><a href="comentariosReseñas.html">Reseñas</a></li>
-            <li><a href="chefSucursales.html">Chefs</a></li>
-        </ul>
-    </nav>
-    <body onload="cargarComidaPaises()">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="tipoComida.html">Carta</a></li>
+                <li><a href="comidaPaises.html" class="activo">Comida Internacional</a></li>
+                <li><a href="especialidades.html">Especialidad del Día</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="comentariosReseñas.html">Reseñas</a></li>
+                <li><a href="chefSucursales.html">Chefs</a></li>
+            </ul>
+            <div id="perfilUsuario">
+                <span id="usuarioNav"></span>
+                <button id="btnCerrarSesion" onclick="cerrarSesion()">Salir</button>
+            </div>
+        </nav>
+    </header>
 
-
-        <div id="contenido"></div>
-
-        <script src="../JS/main.js"></script>
-
-    </body>
+    </main>
+    <div class="filtros">
+        <span class="icono-busqueda">🔍</span>
+        <input type="text" id="buscarPais" list="listaPaises" placeholder="Buscar país..." oninput="filtrarPaises()">
+        <datalist id="listaPaises"></datalist>
+    </div>
+    <p id="resultadoBusqueda"></p>
+    <div id="contenido"></div>
+    </main>
+    <script src="../JS/main.js"></script>
 </body>
 
 </html>

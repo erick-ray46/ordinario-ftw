@@ -1,0 +1,4 @@
+<!ELEMENT chefs (chef+)>
+<!ELEMENT chef (nombreCompleto, nombrePais)>
+<!ELEMENT nombreCompleto (#PCDATA)>
+<!ELEMENT nombrePais (#PCDATA)>

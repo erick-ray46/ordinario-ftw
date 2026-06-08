@@ -1,40 +1,155 @@
+h1{
+    text-align:center;
+    margin-top:30px;
+}
 
-.titulo-sucursales{
+#tabla{
+    width:90%;
+    margin:30px auto;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    font-size: 20px;
+    font-style: italic;
+}
+
+#tabla th{
+    background:#333;
+    color:white;
+    padding:15px;
+}
+
+#tabla td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+#tabla tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+#tabla tr:hover{
+    background:#ffe082; 
+}
+
+.btnReserva{
+    background: #d35400;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btnConfirmar{
+    background:#d35400;
+    color: white;
+    border: none;
+    padding: 15px 30px; /* más grande */
+    font-size: 20px;    /* texto más grande */
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+td:last-child{
     text-align: center;
-    margin: 30px 0;
-    font-size: 40px;
 }
 
-/* Contenedor de tarjetas */
-#contenedor-sucursales{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+.btnReserva:hover{
+    background: #e67e22;
+
+}
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
 }
 
-/* Tarjetas */
-.tarjeta-sucursal{
-    width: 320px;
-    min-height: 220px;
-
+.modal-contenido{
     background: white;
-
-    border-radius: 15px;
-
+    font-size: 25px;
+    width: 400px;
+    margin: 150px auto;
     padding: 20px;
-
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.tarjeta-sucursal h2{
+    border-radius: 12px;
     text-align: center;
-    margin-bottom: 20px;
-    color: #d4a700;
+}
+#horarioReserva{
+    margin: 20px 0;
+    font-size: 18px;
+}
+.spanCerrar{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+    cursor: pointer;
+}
+#tablaReservas{
+    width: 85%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
 
-.tarjeta-sucursal p{
-    margin: 10px 0;
-    font-size: 18px;
-    line-height: 1.4;
+#tablaReservas th{
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#tablaReservas td{
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#tablaReservas tr:nth-child(even){
+    background-color: #f5f5f5;
+}
+
+h2{
+    text-align: center;
+    margin-top: 40px;
+}
+.btnCancelar{
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btnCancelar:hover{
+    background-color: #e74c3c;
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .modal-contenido {
+        width: 90%;
+        margin: 80px auto;
+        font-size: 18px;
+    }
+
+    .btnConfirmar {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-contenido {
+        width: 95%;
+        margin: 50px auto;
+    }
 }

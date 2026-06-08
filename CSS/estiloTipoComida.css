@@ -4,31 +4,32 @@
 }
 
 #contenido{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 80%;
+    margin: auto;
 }
 
 .tarjeta-tipo{
-    width: 250px;
-    height: 250px;
-
     background: white;
-
     border-radius: 12px;
-
     overflow: hidden;
-
-    cursor: pointer;
-
     box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
 }
+
+.tarjeta-tipo:hover{
+    transform: scale(1.05);
+}
+
 
 .imagen-tipo{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 220px;
+    object-fit: contain;
 }
 
 .info-tipo{
@@ -39,35 +40,27 @@
 .info-tipo h3{
     text-align: center;
 }
-
 .modal{
     display: none;
-
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     background: rgba(0,0,0,0.6);
 }
-
 .modal-contenido{
 
     background: white;
-
     width: 500px;
-
     margin: 100px auto;
-
     padding: 20px;
-
     border-radius: 10px;
+    font-weight: bold;
 }
 
 #descripcionModal{
-    margin: 15px 0;
+    margin: 30px 0;
     color: #555;
     font-style: italic;
 }
@@ -77,24 +70,17 @@
 }
 
 #listaPlatillos li{
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     padding: 10px 0;
-
     border-bottom: 1px solid #ddd;
 }
 
 .precio{
 
     color: green;
-
     font-weight: bold;
-
     font-size: 18px;
 }
 
@@ -102,4 +88,32 @@
     float: right;
     font-size: 30px;
     cursor: pointer;
+}
+
+.nombre-tipo{
+    padding: 15px;
+    background: #333;
+}
+
+.nombre-tipo h3{
+    margin: 0;
+    color: white;
+    font-size: 22px;
+}
+@media (max-width: 768px) {
+    #contenido {
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+    }
+
+    .modal-contenido {
+        width: 90%;
+        margin: 80px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #contenido {
+        grid-template-columns: 1fr;
+    }
 }

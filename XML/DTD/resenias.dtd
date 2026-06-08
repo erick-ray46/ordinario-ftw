@@ -1,0 +1,6 @@
+<!ELEMENT resenias (resenia+)>
+
+<!ELEMENT resenia (nombre, comentario, calificacion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT comentario (#PCDATA)>
+<!ELEMENT calificacion (#PCDATA)>

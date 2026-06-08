@@ -10,6 +10,7 @@
 
 <body>
 
+<header>
     <nav>
         <ul>
             <li><a href="../index.html">Inicio</a></li>
@@ -20,37 +21,67 @@
             <li><a href="comentariosReseñas.html">Reseñas</a></li>
             <li><a href="chefSucursales.html">Chefs</a></li>
         </ul>
-    </nav>
-
-    <h1 class="titulo-seccion">Nuestras Sucursales</h1>
-
-    <div id="contenedor-sucursales"></div>
-
-    <div id="modal" class="modal">
-
-        <div class="modal-contenido">
-
-            <span class="cerrar" onclick="cerrarModal()">
-                &times;
-            </span>
-
-            <h2 id="tituloModal"></h2>
-
-            <p id="direccionModal"></p>
-
-            <p id="telefonoModal"></p>
-
-            <p id="horarioModal"></p>
-
+        <div id="perfilUsuario">
+            <span id="usuarioNav"></span>
+            <button id="btnCerrarSesion" onclick="cerrarSesion()">Salir</button>
         </div>
+    </nav>
+</header>
 
+<main>
+    <h1 class="titulo-seccion">Nuestras Sucursales</h1>
+    <table id="tabla"> </table>
+    <h2>Reservas Realizadas</h2>
+    <table id="tablaReservas"></table>
+</main>
+
+    <div id="modalReserva" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarReserva()">&times;</span>
+            <h2>Reservar Mesa</h2>
+            <p id="nombreSucursal"></p>
+            <p id="direccionSucursal"></p>
+            <label>Horario:</label>
+            <select id="horarioReserva">
+                <option>09:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>12:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+                <option>17:00</option>
+                <option>18:00</option>
+                <option>19:00</option>
+                <option>20:00</option>
+                <option>21:00</option>
+                <option>22:00</option>
+            </select>
+            <br><br>
+            <button class="btnConfirmar" onclick="confirmarReserva()">Confirmar Reserva</button>
+        </div>
+    </div>
+    <div id="modalAlerta" class="modal">
+        <div class="modal-contenido">
+            <p id="mensajeAlerta"></p>
+            <button class="btnConfirmar" onclick="cerrarAlerta()">Aceptar</button>
+        </div>
     </div>
 
+    <!-- Modal de confirmación de cancelación -->
+    <div id="modalCancelar" class="modal">
+        <div class="modal-contenido">
+            <p>¿Deseas cancelar esta reserva?</p>
+                <button class="btnConfirmar" onclick="confirmarCancelacion()">Sí, cancelar</button>
+                <button class="btnCancelar" onclick="document.getElementById('modalCancelar').style.display='none'">No</button>
+        </div>
+    </div>
     <script src="../JS/main.js"></script>
-
     <script>
         cargarSucursales();
+        cargarReservas();
     </script>
-
 </body>
+
 </html>

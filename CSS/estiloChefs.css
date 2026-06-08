@@ -1,0 +1,48 @@
+#tablaChefs{
+
+    width: 90%;
+
+    margin: 30px auto;
+
+    border-collapse: collapse;
+
+    background: white;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#tablaChefs th{
+
+    background: #d35400;
+
+    color: white;
+
+    padding: 15px;
+}
+
+#tablaChefs td{
+
+    padding: 12px;
+
+    text-align: center;
+
+    border: 1px solid #ddd;
+}
+
+#tablaChefs tr:nth-child(even){
+
+    background: #f9f9f9;
+}
+
+#tablaChefs tr:hover{
+
+    background: #fff3cd;
+}
+.titulo-seccion{
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #d35400;
+}
