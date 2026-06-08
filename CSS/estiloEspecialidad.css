@@ -37,3 +37,17 @@ h1{
     color:green;
     font-weight: bold;
 }
+@media (max-width: 768px){
+
+    #tabla{
+        width: 95%;
+        font-size: 13px;
+    }
+
+    #tabla th,
+    #tabla td{
+        padding: 6px;
+        word-break: break-word;
+    }
+}
+
