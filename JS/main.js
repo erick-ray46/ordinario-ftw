@@ -10,12 +10,7 @@ function cargarXML(ruta, etiqueta, campos) {
                 salida += "<div class='tarjeta'>";
                 campos.forEach(campo => {
                     salida += `
-                        <p>
-                            <strong>${campo}:</strong>
-                            ${elementos[i]
-                            .getElementsByTagName(campo)[0]
-                            .textContent}
-                        </p>
+                        <p> <strong>${campo}:</strong> ${elementos[i].getElementsByTagName(campo)[0].textContent}</p>
                     `;
                 });
                 salida += "</div>";
@@ -23,24 +18,21 @@ function cargarXML(ruta, etiqueta, campos) {
             document.getElementById("contenido").innerHTML = salida;
         })
         .catch(error => {
-            document.getElementById("contenido").innerHTML =
-                "<p>Error al cargar el XML.</p>";
+            document.getElementById("contenido").innerHTML = "<p>Error al cargar el XML.</p>";
             console.error(error);
         });
 }
-function iniciarSesion(){
+function iniciarSesion() {
     const usuario = document.getElementById("usuario").value.trim();
     const password = document.getElementById("password").value.trim();
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-
     const existeUsuario = usuarios.find(u => u.usuario === usuario);
-
-    if(!existeUsuario){
+    if (!existeUsuario) {
         mostrarAlertaInicio(" Usuario no encontrado ❌. Intenta registrarte.");
         return;
     }
     const valido = usuarios.find(u => u.usuario === usuario && u.password === password);
-    if(!valido){
+    if (!valido) {
         mostrarAlertaInicio(" Contraseña incorrecta ❌. Intenta de nuevo.");
         return;
     }
@@ -48,16 +40,16 @@ function iniciarSesion(){
     mostrarUsuarioActivo();
     mostrarAlertaInicio("¡Bienvenido, " + usuario + "! 👤");
 }
-function registrarUsuario(){
+function registrarUsuario() {
     const usuario = document.getElementById("usuario").value.trim();
     const password = document.getElementById("password").value.trim();
-    if(usuario === "" || password === ""){
+    if (usuario === "" || password === "") {
         mostrarAlertaInicio("⚠️ Completa todos los campos.");
         return;
     }
     let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
     const existe = usuarios.some(u => u.usuario === usuario);
-    if(existe){
+    if (existe) {
         mostrarAlertaInicio("❌ Ese usuario ya existe.");
         return;
     }
@@ -70,7 +62,7 @@ function registrarUsuario(){
     mostrarAlertaInicio("¡Usuario registrado correctamente! Bienvenido, " + usuario + " 🎉", true);
 }
 
-function mostrarUsuarioActivo(){
+function mostrarUsuarioActivo() {
 
     const usuario =
         localStorage.getItem("usuarioActivo");
@@ -87,7 +79,7 @@ function mostrarUsuarioActivo(){
     const mensaje =
         document.getElementById("mensajeBienvenida");
 
-    if(usuario){
+    if (usuario) {
 
         usuarioNav.textContent =
             "👤 " + usuario;
@@ -95,13 +87,13 @@ function mostrarUsuarioActivo(){
         btnCerrar.style.display =
             "block";
 
-        if(loginContainer)
+        if (loginContainer)
             loginContainer.style.display = "none";
 
-        if(mensaje)
+        if (mensaje)
             mensaje.textContent = "Bienvenido " + usuario;
 
-    }else{
+    } else {
 
         usuarioNav.textContent =
             "👤 Invitado";
@@ -109,14 +101,14 @@ function mostrarUsuarioActivo(){
         btnCerrar.style.display =
             "none";
 
-        if(loginContainer)
+        if (loginContainer)
             loginContainer.style.display = "flex";
 
-        if(mensaje)
+        if (mensaje)
             mensaje.textContent = "";
     }
 }
-function cerrarSesion(){
+function cerrarSesion() {
     localStorage.removeItem("usuarioActivo");
     window.location.href = "../index.html";
 }
@@ -194,110 +186,48 @@ function llenarCombo(paises) {
     }
 }
 function mostrarPaises(grupos) {
-
     let salida = "";
-
     for (let pais in grupos) {
-
         salida += `
         <section class="pais">
-
             <h2>${pais}</h2>
-
             <div class="contenedor-platillos">
         `;
-
         grupos[pais].forEach(platillo => {
-
             salida += `
             <div class="tarjeta"
                  onclick="cambiarVista(this)">
-
-                <img
-                    src="${platillo.imagen}"
-                    alt="${platillo.platillo}"
-                    class="imagen-platillo"
-                >
-
+                <img src="${platillo.imagen}" alt="${platillo.platillo}" class="imagen-platillo">
                 <div class="infoPlatillo">
-
                     <h3>${platillo.platillo}</h3>
-
-                    <p>
-                        <strong>Tipo:</strong>
-                        ${platillo.tipo}
-                    </p>
-
-                    <p>
-                        ${platillo.descripcion}
-                    </p>
-
-                    <p class="precio">
-                        $${platillo.precio} MXN
-                    </p>
-
+                    <p> <strong>Tipo:</strong> ${platillo.tipo} </p>
+                    <p> ${platillo.descripcion} </p>
+                    <p class="precio"> $${platillo.precio} MXN </p>
                 </div>
-
             </div>
             `;
         });
-
         salida += `
             </div>
-
         </section>
         `;
     }
-
     document.getElementById("contenido").innerHTML = salida;
 }
 function filtrarPaises() {
-
-    const texto =
-        document.getElementById("buscarPais")
-            .value
-            .toLowerCase();
-
+    const texto = document.getElementById("buscarPais").value.toLowerCase();
     let grupos = {};
-
     for (let i = 0; i < paisesXML.length; i++) {
-
-        const nombrePais =
-            paisesXML[i]
-                .getElementsByTagName("nombrePais")[0]
-                .textContent;
-
+        const nombrePais = paisesXML[i].getElementsByTagName("nombrePais")[0].textContent;
         if (nombrePais.toLowerCase().includes(texto)) {
-
-            const nombrePlatillo =
-                paisesXML[i]
-                    .getElementsByTagName("nombrePlatillo")[0]
-                    .textContent;
-
-            const descripcion =
-                paisesXML[i]
-                    .getElementsByTagName("descripcion")[0]
-                    .textContent;
-
-            const precio =
-                paisesXML[i]
-                    .getElementsByTagName("precio")[0]
-                    .textContent;
-
-            const tipo =
-                paisesXML[i]
-                    .getElementsByTagName("tipoComida")[0]
-                    .textContent;
-
-            const imagen =
-                paisesXML[i]
-                    .getElementsByTagName("imgComida")[0]
-                    .textContent;
-
+            const nombrePlatillo = paisesXML[i].getElementsByTagName("nombrePlatillo")[0].textContent;
+            const descripcion = paisesXML[i].getElementsByTagName("descripcion")[0].textContent;
+            const precio = paisesXML[i].getElementsByTagName("precio")[0].textContent;
+            const tipo = paisesXML[i].getElementsByTagName("tipoComida")[0].textContent;
+            const imagen = paisesXML[i].getElementsByTagName("imgComida")[0].textContent;
             if (!grupos[nombrePais]) {
                 grupos[nombrePais] = [];
             }
-
             grupos[nombrePais].push({
                 platillo: nombrePlatillo,
                 descripcion: descripcion,
@@ -307,9 +237,7 @@ function filtrarPaises() {
             });
         }
     }
-
     mostrarPaises(grupos);
-
     document.getElementById("resultadoBusqueda").textContent = Object.keys(grupos).length + " país(es) encontrado(s)";
 }
 
@@ -340,32 +268,17 @@ function cargarTiposComida() {
             const tipos = xml.getElementsByTagName("tipo");
             let salida = "";
             for (let i = 0; i < tipos.length; i++) {
-                const nombre =
-                    tipos[i].getElementsByTagName("nombre")[0].textContent;
-                const descripcion =
-                    tipos[i].getElementsByTagName("descripcion")[0].textContent;
-                const nodosPlatillos =
-                    tipos[i].getElementsByTagName("platillo");
+                const nombre = tipos[i].getElementsByTagName("nombre")[0].textContent;
+                const descripcion = tipos[i].getElementsByTagName("descripcion")[0].textContent;
+                const nodosPlatillos = tipos[i].getElementsByTagName("platillo");
                 let platillos = [];
                 for (let j = 0; j < nodosPlatillos.length; j++) {
-                    platillos.push(
-                        nodosPlatillos[j].textContent
-                    );
+                    platillos.push(nodosPlatillos[j].textContent);
                 }
-                const imagen =
-                    tipos[i].getElementsByTagName("imagen")[0].textContent;
+                const imagen = tipos[i].getElementsByTagName("imagen")[0].textContent;
                 salida += `
-                <div class="tarjeta-tipo"
-                    onclick='mostrarModal(
-                        "${nombre}",
-                        "${descripcion}",
-                        ${JSON.stringify(platillos)}
-                    )'>
-                    <img
-                        src="${imagen}"
-                        class="imagen-tipo"
-                        alt="${nombre}"
-                    >
+                <div class="tarjeta-tipo" onclick='mostrarModal("${nombre}", "${descripcion}",${JSON.stringify(platillos)})'>
+                    <img src="${imagen}" class="imagen-tipo" alt="${nombre}">
                     <div class="nombre-tipo">
                         <h3>${nombre}</h3>
                     </div>
@@ -373,48 +286,32 @@ function cargarTiposComida() {
                     <h3>${nombre}</h3>
                         <p>${descripcion}</p>
                     </div>
-
                 </div>
             `;
             }
-
             document.getElementById("contenido").innerHTML = salida;
         });
 }
 function cambiarVista(tarjeta) {
-
-    const imagen =
-        tarjeta.querySelector("img");
-
-    const info =
-        tarjeta.querySelector("div");
-
+    const imagen = tarjeta.querySelector("img");
+    const info = tarjeta.querySelector("div");
     if (imagen.style.display === "none") {
-
         imagen.style.display = "block";
         info.style.display = "none";
-
     } else {
-
         imagen.style.display = "none";
         info.style.display = "block";
     }
 }
 
 function mostrarModal(nombre, descripcion, platillos) {
-
     document.getElementById("tituloModal").innerText = nombre;
     document.getElementById("descripcionModal").innerText = descripcion;
-
     let lista = "";
-
     for (let i = 0; i < platillos.length; i++) {
-
         const datos = platillos[i].split("|");
-
         const nombrePlatillo = datos[0];
         const precio = datos[1];
-
         lista += `
             <li>
                 <span>${nombrePlatillo}</span>
@@ -457,7 +354,7 @@ function mostrarTablaSucursales(sucursales) {
     for (let i = 0; i < sucursales.length; i++) {
         const nombre = sucursales[i].getElementsByTagName("nombre")[0].textContent;
         const direccion = sucursales[i].getElementsByTagName("direccion")[0].textContent;
-        const telefono = sucursales[i].getElementsByTagName("telefono")[0].textContent; 
+        const telefono = sucursales[i].getElementsByTagName("telefono")[0].textContent;
         const horario = sucursales[i].getElementsByTagName("horario")[0].textContent;
         tabla += `
         <tr>
@@ -479,8 +376,8 @@ function mostrarTablaSucursales(sucursales) {
 function abrirReserva(nombre, direccion) {
     const usuario = localStorage.getItem("usuarioActivo");
     if (!usuario) {
-        mostrarAlerta("⚠️ Debes iniciar sesión para hacer una reserva."); 
-        setTimeout(() => {window.location.href = "../index.html"; }, 2000);
+        mostrarAlerta("⚠️ Debes iniciar sesión para hacer una reserva.");
+        setTimeout(() => { window.location.href = "../index.html"; }, 2000);
         return;
     }
     sucursalActual = nombre;
@@ -493,7 +390,6 @@ function abrirReserva(nombre, direccion) {
 
 function cerrarReserva() {
     document.getElementById("modalReserva").style.display = "none";
-    
 }
 
 function confirmarReserva() {
@@ -504,7 +400,7 @@ function confirmarReserva() {
         mostrarAlerta("❌ Ese horario ya está reservado para esta sucursal.");
         return;
     }
-    reservas.push({sucursal: sucursalActual, direccion: direccionActual, horario: horario});
+    reservas.push({ sucursal: sucursalActual, direccion: direccionActual, horario: horario });
     localStorage.setItem("reservas", JSON.stringify(reservas));
     cerrarReserva();
     cargarReservas();
@@ -527,17 +423,13 @@ function cargarReservas() {
     <tbody>
     `;
     reservas.forEach((reserva, indice) => {
-    tabla += `
+        tabla += `
     <tr>
         <td>${reserva.sucursal}</td>
         <td>${reserva.direccion}</td>
         <td>${reserva.horario}</td>
         <td>
-            <button
-                class="btnCancelar"
-                onclick="cancelarReserva(${indice})">
-                ❌ Cancelar
-            </button>
+            <button class="btnCancelar" onclick="cancelarReserva(${indice})">❌ Cancelar </button>
         </td>
     </tr>
     `;
@@ -549,12 +441,12 @@ function cargarReservas() {
 }
 let indiceReservaActual = null;
 
-function cancelarReserva(indice){
+function cancelarReserva(indice) {
     indiceReservaActual = indice;
     document.getElementById("modalCancelar").style.display = "block";
 }
 
-function confirmarCancelacion(){
+function confirmarCancelacion() {
     let reservas = JSON.parse(localStorage.getItem("reservas")) || [];
     reservas.splice(indiceReservaActual, 1);
     localStorage.setItem("reservas", JSON.stringify(reservas));
@@ -664,55 +556,23 @@ function mostrarTablaResenias(comentarios) {
     document.getElementById("tabla").innerHTML = tabla;
 }
 function cargarChefs() {
-
     const xhttpChefs = new XMLHttpRequest();
-
     xhttpChefs.onload = function () {
-
         const xmlChefs = xhttpChefs.responseXML;
-
-        const chefs =
-            xmlChefs.getElementsByTagName("chef");
-
-        const xhttpSucursales =
-            new XMLHttpRequest();
-
+        const chefs = xmlChefs.getElementsByTagName("chef");
+        const xhttpSucursales = new XMLHttpRequest();
         xhttpSucursales.onload = function () {
-
-            const xmlSucursales =
-                xhttpSucursales.responseXML;
-
-            const sucursales =
-                xmlSucursales.getElementsByTagName(
-                    "sucursal"
-                );
-
-            mostrarTablaChefs(
-                chefs,
-                sucursales
-            );
+            const xmlSucursales = xhttpSucursales.responseXML;
+            const sucursales = xmlSucursales.getElementsByTagName("sucursal");
+            mostrarTablaChefs(chefs, sucursales);
         };
-
-        xhttpSucursales.open(
-            "GET",
-            "../XML/sucursales.xml"
-        );
-
+        xhttpSucursales.open("GET", "../XML/sucursales.xml");
         xhttpSucursales.send();
     };
-
-    xhttpChefs.open(
-        "GET",
-        "../XML/chefSucursales.xml"
-    );
-
+    xhttpChefs.open("GET", "../XML/chefSucursales.xml");
     xhttpChefs.send();
 }
-function mostrarTablaChefs(
-    chefs,
-    sucursales
-) {
-
+function mostrarTablaChefs(chefs, sucursales) {
     let tabla = `
     <thead>
         <tr>
@@ -723,37 +583,14 @@ function mostrarTablaChefs(
     </thead>
     <tbody>
     `;
-    for (
-        let i = 0;
-        i < chefs.length;
-        i++
-    ) {
-        const nombreChef =
-            chefs[i]
-                .getElementsByTagName(
-                    "nombreCompleto"
-                )[0]
-                .textContent;
-        const origen =
-            chefs[i]
-                .getElementsByTagName(
-                    "nombrePais"
-                )[0]
-                .textContent;
-        const nombreSucursal =
-            sucursales[
-                i % sucursales.length
-            ]
-                .getElementsByTagName(
-                    "nombre"
-                )[0]
-                .textContent;
+    for (let i = 0; i < chefs.length;i++) {
+        const nombreChef = chefs[i].getElementsByTagName("nombreCompleto")[0].textContent;
+        const origen = chefs[i].getElementsByTagName("nombrePais")[0].textContent;
+        const nombreSucursal = sucursales[i % sucursales.length].getElementsByTagName("nombre")[0].textContent;
         tabla += `
         <tr>
             <td>${nombreChef}</td>
-
             <td>${nombreSucursal}</td>
-
             <td>${origen}</td>
         </tr>
         `;
@@ -761,9 +598,7 @@ function mostrarTablaChefs(
     tabla += `
     </tbody>
     `;
-    document.getElementById(
-        "tablaChefs"
-    ).innerHTML = tabla;
+    document.getElementById("tablaChefs").innerHTML = tabla;
 }
 document.addEventListener("DOMContentLoaded", mostrarUsuarioActivo);
 
