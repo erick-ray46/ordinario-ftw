@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chefs por Sucursal</title>
     <link rel="stylesheet" href="../CSS/estilos.css">
     <link rel="stylesheet" href="../CSS/estiloChefs.css">
 </head>
+
 <body>
-<header>
-    <nav>
-        <ul class="menu">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="tipoComida.html">Carta</a></li>
-            <li><a href="comidaPaises.html">Comida Internacional</a></li>
-            <li><a href="especialidades.html">Especialidad del Día</a></li>
-            <li><a href="sucursales.html">Sucursales</a></li>
-            <li><a href="comentariosReseñas.html">Reseñas</a></li>
-            <li><a href="chefSucursales.html" class="activo"> Chefs</a></li>
-        </ul>
-        <div id="perfilUsuario">
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="tipoComida.html">Carta</a></li>
+                <li><a href="comidaPaises.html">Comida Internacional</a></li>
+                <li><a href="especialidades.html">Especialidad del Día</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="comentariosReseñas.html">Reseñas</a></li>
+                <li><a href="chefSucursales.html" class="activo"> Chefs</a></li>
+            </ul>
+            <div id="perfilNav">
 
-            <span id="usuarioNav"></span>
+                <span id="usuarioNav"></span>
 
-            <button id="btnCerrarSesion"
-                    onclick="cerrarSesion()">
-                Salir
-            </button>
+                <button id="btnCerrarSesion" onclick="cerrarSesion()">
+                    Salir
+                </button>
 
-        </div>
-    </nav>
-</header>
-<main>
-    <h1 class="titulo-seccion">Chefs en Turno</h1>
-    <table id="tablaChefs"></table>
-</main>
-<script src="../JS/main.js"></script>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo-seccion">Chefs en Turno</h1>
+        <table id="tablaChefs"></table>
+    </main>
+    <script src="../JS/main.js"></script>
 
-<script>
-    cargarChefs();
-</script>
+    <script>
+        cargarChefs();
+    </script>
 
 </body>
+
 </html>

@@ -1,41 +1,11 @@
 body{
     font-family: Arial, sans-serif;
-    margin:0;
-    background:#f4f4f4;
-    
-}
-
-nav{
-    background:#333;
-}
-
-nav ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
     margin: 0;
-    padding: 0;
+    background: #f4f4f4;
 }
 
-nav li{
-    padding: 20px;
-}
-
-nav a{
-    font-size: 22px;  
-    font-weight: bold;    
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-
-nav a.activo{
-    background-color: #f1c40f;
-    color: #333;
-    padding: 10px 15px;
-    border-radius: 8px;
-}
 nav{
+    background: #333;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,21 +16,53 @@ nav{
     display: flex;
     list-style: none;
     gap: 15px;
+    margin: 0;
+    padding: 0;
 }
 
-#perfilUsuario{
+nav li{
+    padding: 20px 0;
+}
+
+nav a{
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #f1c40f;
+}
+
+nav a.activo{
+    background-color: #f1c40f;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+
+#perfilNav{
     display: flex;
     align-items: center;
     gap: 10px;
+
     color: white;
     font-weight: bold;
-}
-#perfilUsuario{
+
     background: rgba(255,255,255,0.15);
     padding: 8px 15px;
     border-radius: 20px;
+
     backdrop-filter: blur(5px);
 }
+
+#usuarioNav{
+    font-size: 18px;
+}
+
 #btnCerrarSesion{
     padding: 10px 20px;
     border: none;
@@ -68,65 +70,47 @@ nav{
     cursor: pointer;
     font-weight: bold;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-#usuarioNav{
-    font-size: 18px;
-}
-
-@media (max-width: 768px) {
-    nav {
+@media (max-width: 768px){
+    nav{
         flex-direction: column;
         padding: 10px;
     }
-
-    nav ul.menu {
+    .menu{
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
+        gap: 8px;
+    }
+    nav li{
+        padding: 5px;
+    }
+    nav a{
+        font-size: 14px;
+    }
+    #perfilNav{
+        margin-top: 10px;
+        padding: 6px 12px;
+    }
+    #usuarioNav{
+        font-size: 14px;
+    }
+    #btnCerrarSesion{
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px){
+
+    nav a{
+        font-size: 12px;
+    }
+
+    .menu{
         gap: 5px;
     }
 
-    nav li {
-        padding: 8px;
-    }
-
-    nav a {
-        font-size: 16px;
-    }
-
-    #perfilUsuario {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    #tabla, #tablaChefs, #tablaReservas {
-        width: 100%;
-        font-size: 14px;
-    }
-
-    #tabla th, #tabla td,
-    #tablaChefs th, #tablaChefs td,
-    #tablaReservas th, #tablaReservas td {
-        padding: 8px 5px;
-    }
-
-    footer {
-        font-size: 14px;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul.menu {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        font-size: 14px;
+    #usuarioNav{
+        font-size: 12px;
     }
 }

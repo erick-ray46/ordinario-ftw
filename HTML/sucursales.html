@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sucursales</title>
     <link rel="stylesheet" href="../CSS/estilos.css">
     <link rel="stylesheet" href="../CSS/estiloSucursal.css">
@@ -11,30 +11,30 @@
 
 <body>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="tipoComida.html">Carta</a></li>
-            <li><a href="comidaPaises.html">Comida Internacional</a></li>
-            <li><a href="especialidades.html">Especialidad del Día</a></li>
-            <li><a href="sucursales.html" class="activo">Sucursales</a></li>
-            <li><a href="comentariosReseñas.html">Reseñas</a></li>
-            <li><a href="chefSucursales.html">Chefs</a></li>
-        </ul>
-        <div id="perfilUsuario">
-            <span id="usuarioNav"></span>
-            <button id="btnCerrarSesion" onclick="cerrarSesion()">Salir</button>
-        </div>
-    </nav>
-</header>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="tipoComida.html">Carta</a></li>
+                <li><a href="comidaPaises.html">Comida Internacional</a></li>
+                <li><a href="especialidades.html">Especialidad del Día</a></li>
+                <li><a href="sucursales.html" class="activo">Sucursales</a></li>
+                <li><a href="comentariosReseñas.html">Reseñas</a></li>
+                <li><a href="chefSucursales.html">Chefs</a></li>
+            </ul>
+            <div id="perfilNav">
+                <span id="usuarioNav"></span>
+                <button id="btnCerrarSesion" onclick="cerrarSesion()">Salir</button>
+            </div>
+        </nav>
+    </header>
 
-<main>
-    <h1 class="titulo-seccion">Nuestras Sucursales</h1>
-    <table id="tabla"> </table>
-    <h2>Reservas Realizadas</h2>
-    <table id="tablaReservas"></table>
-</main>
+    <main>
+        <h1 class="titulo-seccion">Nuestras Sucursales</h1>
+        <table id="tabla"> </table>
+        <h2>Reservas Realizadas</h2>
+        <table id="tablaReservas"></table>
+    </main>
 
     <div id="modalReserva" class="modal">
         <div class="modal-contenido">
@@ -74,8 +74,9 @@
     <div id="modalCancelar" class="modal">
         <div class="modal-contenido">
             <p>¿Deseas cancelar esta reserva?</p>
-                <button class="btnConfirmar" onclick="confirmarCancelacion()">Sí, cancelar</button>
-                <button class="btnCancelar" onclick="document.getElementById('modalCancelar').style.display='none'">No</button>
+            <button class="btnConfirmar" onclick="confirmarCancelacion()">Sí, cancelar</button>
+            <button class="btnCancelar"
+                onclick="document.getElementById('modalCancelar').style.display='none'">No</button>
         </div>
     </div>
     <script src="../JS/main.js"></script>

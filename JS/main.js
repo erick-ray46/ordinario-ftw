@@ -583,7 +583,7 @@ function mostrarTablaChefs(chefs, sucursales) {
     </thead>
     <tbody>
     `;
-    for (let i = 0; i < chefs.length;i++) {
+    for (let i = 0; i < chefs.length; i++) {
         const nombreChef = chefs[i].getElementsByTagName("nombreCompleto")[0].textContent;
         const origen = chefs[i].getElementsByTagName("nombrePais")[0].textContent;
         const nombreSucursal = sucursales[i % sucursales.length].getElementsByTagName("nombre")[0].textContent;

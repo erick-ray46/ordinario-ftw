@@ -19,11 +19,16 @@ body.inicio{
     align-items: center;
     text-align: center;
 }
-.tarjeta-principal h1{
-    font-size: 70px;
-    margin-top: 60px;
-    margin-bottom: 0px;
-    color: #d35400;
+@media (max-width: 480px){
+
+    .tarjeta-principal h1{
+        font-size: 34px;
+        line-height: 1.1;
+    }
+
+    .tarjeta-principal p{
+        font-size: 16px;
+    }
 }
 .tarjeta-principal p{
     font-size: 24px;
@@ -95,36 +100,64 @@ body.inicio{
     font-weight: bold;
     font-size: 16px;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 480px) {
+
     .tarjeta-principal {
-        width: 95%;
-        height: auto;
-        padding: 20px;
-        margin: 20px auto;
+
+        width: 92%;
+        padding: 15px;
+        margin: 15px auto;
     }
 
     .tarjeta-principal h1 {
-        font-size: 40px;
-        margin-top: 20px;
+
+        font-size: 26px;
+        line-height: 1.1;
+        margin-top: 10px;
     }
 
     .tarjeta-principal p {
-        font-size: 18px;
-        width: 90%;
-    }
 
-    .modal-alerta-contenido {
-        width: 90%;
-        margin: 100px auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .tarjeta-principal h1 {
-        font-size: 28px;
+        font-size: 16px;
+        width: 95%;
     }
 
     .login-container input {
-        width: 200px;
+
+        width: 90%;
+        max-width: 280px;
     }
+
+    .botones-login {
+
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .botones-login button {
+
+        width: 180px;
+    }
+}
+@media (max-width: 768px){
+
+    nav{
+
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .menu{
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #perfilNav{
+
+        margin-top: 10px;
+    }
+    
 }
